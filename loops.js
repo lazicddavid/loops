@@ -116,4 +116,5 @@ function spojiImena() {
   let imena = ["marko", "ana", "  jelena"];
 
   let spojeno = imena.join("");
+  console.log(spojeno);
 }
