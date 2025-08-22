@@ -76,7 +76,7 @@ function dupliraj() {
     let dupli = brojevi[i] * 2;
     duplirani.push(dupli);
   }
-  console.log(duplirani);
+
   return duplirani;
 }
 let ishod = dupliraj();
@@ -99,7 +99,6 @@ function filtriraj() {
     }
   }
 
-  console.log(veciOdDeset);
   return veciOdDeset;
 }
 
@@ -113,9 +112,16 @@ let imena = ["Ana", "Marko", "Jelena"];
 Napiši kod koji spaja sva imena u jedan string razdvojena zarezom, npr: "Ana, Marko, Jelena". Zatim vraća taj string i sačuvaj ga u varijablu*/
 
 function spojiImena() {
-  let imena = ["marko", "ana", "  jelena"];
+  let imena = ["Marko", "Ana", "Jelena"];
 
   let spojeno = imena.join("");
-  console.log(spojeno);
+
   return spojeno;
 }
+let svaImena = spojiImena();
+console.log("Spojena imena su:", svaImena);
+console.log("--------------------------");
+/*8. Ispis dužine svakog stringa Dat ti je niz stringova: let reci = ["automobil", "kuća", "programiranje"]; Napiši kod koji ispisuje dužinu svakog stringa u nizu. Pogledaj .length*/
+
+
+function duzinaReci()
