@@ -105,3 +105,15 @@ function filtriraj() {
 
 let konacanIshod = filtriraj();
 console.log("Brojevi veci od 10 su:", konacanIshod);
+console.log("--------------------------");
+/*7. Spajanje imena u jedan string
+Dat ti je niz imena:
+
+let imena = ["Ana", "Marko", "Jelena"];
+Napiši kod koji spaja sva imena u jedan string razdvojena zarezom, npr: "Ana, Marko, Jelena". Zatim vraća taj string i sačuvaj ga u varijablu*/
+
+function spojiImena() {
+  let imena = ["marko", "ana", "  jelena"];
+
+  let spojeno = imena.join("");
+}
