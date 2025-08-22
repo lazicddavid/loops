@@ -9,6 +9,8 @@ function brojReci() {
   let recenice = ["Ovo je prva recenica", "Druga recenica ovde", "Treca"];
   let ukupno = 0;
 
-  let reci = recenice[i].split("");
-  ukupno += reci.length;
+  for (let i = 0; i < recenice.length; i++) {
+    let reci = recenice[i].split(" ");
+    ukupno += reci.length;
+  }
 }
