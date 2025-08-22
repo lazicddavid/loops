@@ -70,4 +70,5 @@ Napiši kod koji kreira novi niz u kome su svi brojevi duplirani (npr. [4, 8, 12
 
 function duplitanjeBrojeva() {
   let brojevi = [2, 4, 6, 8];
+  let duplirani = [];
 }
