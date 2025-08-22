@@ -13,4 +13,6 @@ function brojReci() {
     let reci = recenice[i].split(" ");
     ukupno += reci.length;
   }
+  console.log(ukupno);
+  return;
 }
