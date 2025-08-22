@@ -58,3 +58,16 @@ function unazad() {
 }
 
 unazad();
+
+console.log("--------------------------");
+/*
+5. Dupliranje vrednosti u nizu
+Dat ti je niz brojeva:
+
+let brojevi = [2, 4, 6, 8];
+Napiši kod koji kreira novi niz u kome su svi brojevi duplirani (npr. [4, 8, 12, 16]). Zatim vraća taj novi niz. Pozovi funkciju i sačuvaj u varijablu
+*/
+
+function duplitanjeBrojeva() {
+  let brojevi = [2, 4, 6, 8];
+}
