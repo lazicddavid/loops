@@ -68,7 +68,16 @@ let brojevi = [2, 4, 6, 8];
 Napiši kod koji kreira novi niz u kome su svi brojevi duplirani (npr. [4, 8, 12, 16]). Zatim vraća taj novi niz. Pozovi funkciju i sačuvaj u varijablu
 */
 
-function duplitanjeBrojeva() {
+function dupliraj() {
   let brojevi = [2, 4, 6, 8];
   let duplirani = [];
+
+  for (let i = 0; i < brojevi.length; i++) {
+    let dupli = brojevi[i] * 2;
+    duplirani.push(dupli);
+  }
+  console.log(duplirani);
+  return duplirani;
 }
+let ishod = dupliraj();
+console.log("Duplirani niz je:", ishod);
