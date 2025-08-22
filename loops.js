@@ -89,5 +89,19 @@ Dat ti je niz:
 let brojevi = [3, 15, 7, 22, 9, 18];
 Napiši kod koji izdvaja i ispisuje samo brojeve veće od 10.*/
 
-let brojevi = [3, 15, 7, 22, 9, 18];
-let veciOdDeset = [];
+function filtriraj() {
+  let brojevi = [3, 15, 7, 22, 9, 18];
+  let veciOdDeset = [];
+
+  for (let i = 0; i < brojevi.length; i++) {
+    if (brojevi[i] > 10) {
+      veciOdDeset.push(brojevi[i]);
+    }
+  }
+
+  console.log(veciOdDeset);
+  return veciOdDeset;
+}
+
+let konacanIshod = filtriraj();
+console.log("Brojevi veci od 10 su:", konacanIshod);
