@@ -117,4 +117,5 @@ function spojiImena() {
 
   let spojeno = imena.join("");
   console.log(spojeno);
+  return spojeno;
 }
