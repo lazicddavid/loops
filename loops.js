@@ -40,4 +40,10 @@ function pronadjiOsobu() {
     { id: 3, ime: "Milica" },
     { id: 4, ime: "Nikola" },
   ];
+
+  for (let i = 0; i < ljudi.length; i++) {
+    if (ljudi[i].ime === "Milica") {
+      console.log(ljudi[i].id);
+    }
+  }
 }
