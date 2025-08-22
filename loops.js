@@ -13,7 +13,31 @@ function brojReci() {
     let reci = recenice[i].split(" ");
     ukupno += reci.length;
   }
-  return;
+  return ukupno;
 }
 let rezultat = brojReci();
-console.log("Ukupan broj reči je:", rezultat);
+console.log(rezultat);
+
+console.log("--------------------------");
+
+/*2. Pronalaženje osobe po imenu
+Dat ti je niz objekata:
+
+let ljudi = [
+  { id: 1, ime: "Strahinja" },
+  { id: 2, ime: "Nemanja" },
+  { id: 3, ime: "Milica" },
+  { id: 4, ime: "Nikola" }
+];
+Napiši kod koji pronalazi osobu čije je ime "Milica" i ispisuje njen ID.*/
+
+console.log("--------------------------");
+
+function pronadjiOsobu() {
+  let ljudi = [
+    { id: 1, ime: "Strahinja" },
+    { id: 2, ime: "Nemanja" },
+    { id: 3, ime: "Milica" },
+    { id: 4, ime: "Nikola" },
+  ];
+}
