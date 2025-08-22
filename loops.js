@@ -80,4 +80,14 @@ function dupliraj() {
   return duplirani;
 }
 let ishod = dupliraj();
-console.log("Duplirani niz je:", ishod);
+console.log("Duplirani niz:", ishod);
+console.log("--------------------------");
+/*
+6. Filtriranje brojeva većih od 10
+Dat ti je niz:
+
+let brojevi = [3, 15, 7, 22, 9, 18];
+Napiši kod koji izdvaja i ispisuje samo brojeve veće od 10.*/
+
+let brojevi = [3, 15, 7, 22, 9, 18];
+let veciOdDeset = [];
