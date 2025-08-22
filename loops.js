@@ -47,3 +47,12 @@ function pronadjiOsobu() {
     }
   }
 }
+pronadjiOsobu();
+console.log("--------------------------");
+/*4. Ispis brojeva unazad
+Napiši petlju koja ispisuje brojeve od 10 do 1 unazad.*/
+
+function unazad() {
+  for (let i = 10; i >= 1; i--);
+  console.log(i);
+}
