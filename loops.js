@@ -123,5 +123,12 @@ console.log("Spojena imena su:", svaImena);
 console.log("--------------------------");
 /*8. Ispis dužine svakog stringa Dat ti je niz stringova: let reci = ["automobil", "kuća", "programiranje"]; Napiši kod koji ispisuje dužinu svakog stringa u nizu. Pogledaj .length*/
 
+function duzineReci() {
+  let reci = ["automobil", "kuća", "programiranje"];
 
-function duzinaReci()
+  for (let i = 0; i < reci.length; i++) {
+    console.log("Rec:", reci[i], "| duzina:", reci[i].length);
+  }
+}
+
+duzineReci();
