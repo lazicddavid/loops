@@ -65,11 +65,11 @@ let brojevi = [2, 4, 6, 8];
 Napiši kod koji kreira novi niz u kome su svi brojevi duplirani (npr. [4, 8, 12, 16]). Zatim vraća taj novi niz. Pozovi funkciju i sačuvaj u varijablu
 */
 //napravi da ova funkcija moze da duplira bilo koji niz
-let brojevi = [2, 4, 6, 8];
+
 function dupliraj(niz) {
   let duplirani = [];
 
-  for (let i = 0; i < brojevi.length; i++) {
+  for (let i = 0; i < niz.length; i++) {
     let dupli = niz[i] * 2;
     duplirani.push(dupli);
   }
@@ -86,20 +86,19 @@ Dat ti je niz:
 let brojevi = [3, 15, 7, 22, 9, 18];
 Napiši kod koji izdvaja i ispisuje samo brojeve veće od 10.*/
 //napravi da funkcija moze da ispisuje brojeve vece od 10 za bilo koji niz i vraca je
-function filtriraj() {
-  let brojevi = [3, 15, 7, 22, 9, 18];
+function filtriraj(niz) {
   let veciOdDeset = [];
 
-  for (let i = 0; i < brojevi.length; i++) {
-    if (brojevi[i] > 10) {
-      veciOdDeset.push(brojevi[i]);
+  for (let i = 0; i < niz.length; i++) {
+    if (niz[i] > 10) {
+      veciOdDeset.push(niz[i]);
     }
   }
 
   return veciOdDeset;
 }
 
-let konacanIshod = filtriraj();
+let konacanIshod = filtriraj([3, 15, 7, 22, 9, 18]);
 console.log("Brojevi veci od 10 su:", konacanIshod);
 console.log("--------------------------");
 /*7. Spajanje imena u jedan string
