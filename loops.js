@@ -70,13 +70,13 @@ function dupliraj(niz) {
   let duplirani = [];
 
   for (let i = 0; i < brojevi.length; i++) {
-    let dupli = brojevi[i] * 2;
+    let dupli = niz[i] * 2;
     duplirani.push(dupli);
   }
 
   return duplirani;
 }
-let ishod = dupliraj();
+let ishod = dupliraj([2, 4, 6, 8]);
 console.log("Duplirani niz:", ishod);
 console.log("--------------------------");
 /*
