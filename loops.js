@@ -130,10 +130,13 @@ function duzinaReci() {
 duzinaReci();
 console.log("----------------------------------------------------------------");
 
-
-let podeliSaDva = (niz) => {
-  let result = [];
+let uvecaniZaDeset = (niz) => {
+  let ishodi = [];
   for (let i = 0; i < niz.length; i++);
-result.push(niz.[i] /2);
-}
-console.log(podeliSaDva([4, 8, 10])); 
+  {
+    ishodi.push(niz[i] + 10);
+  }
+  return ishodi;
+};
+
+console.log(uvecaniZaDeset([50]));
