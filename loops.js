@@ -4,18 +4,17 @@ Dat ti je niz stringova:
 
 let recenice = ["Ovo je prva rečenica", "Druga rečenica ovde", "Treća"];
 Napiši petlju koji sabira ukupan broj reči u svim rečenicama.Treba da console loguije rezultat i da ga vrati.*/
-
-function brojReci() {
-  let recenice = ["Ovo je prva recenica", "Druga recenica ovde", "Treca"];
+let recenice = ["Ovo je prva recenica", "Druga recenica ovde", "Treca"];
+function brojReci(array) {
   let ukupno = 0;
 
-  for (let i = 0; i < recenice.length; i++) {
-    let reci = recenice[i].split(" ");
-    ukupno += reci.length;
+  for (let i = 0; i < array.length; i++) {
+    let reci = array[i].split(" ");
+    ukupno += array.length;
   }
   return ukupno;
 }
-let rezultat = brojReci();
+let rezultat = brojReci(recenice);
 console.log(rezultat);
 
 console.log("--------------------------");
@@ -30,8 +29,6 @@ let ljudi = [
   { id: 4, ime: "Nikola" }
 ];
 Napiši kod koji pronalazi osobu čije je ime "Milica" i ispisuje njen ID.*/
-
-console.log("--------------------------");
 
 function pronadjiOsobu() {
   let ljudi = [
@@ -67,9 +64,9 @@ Dat ti je niz brojeva:
 let brojevi = [2, 4, 6, 8];
 Napiši kod koji kreira novi niz u kome su svi brojevi duplirani (npr. [4, 8, 12, 16]). Zatim vraća taj novi niz. Pozovi funkciju i sačuvaj u varijablu
 */
-
-function dupliraj() {
-  let brojevi = [2, 4, 6, 8];
+//napravi da ova funkcija moze da duplira bilo koji niz
+let brojevi = [2, 4, 6, 8];
+function dupliraj(niz) {
   let duplirani = [];
 
   for (let i = 0; i < brojevi.length; i++) {
@@ -88,7 +85,7 @@ Dat ti je niz:
 
 let brojevi = [3, 15, 7, 22, 9, 18];
 Napiši kod koji izdvaja i ispisuje samo brojeve veće od 10.*/
-
+//napravi da funkcija moze da ispisuje brojeve vece od 10 za bilo koji niz i vraca je
 function filtriraj() {
   let brojevi = [3, 15, 7, 22, 9, 18];
   let veciOdDeset = [];
@@ -110,7 +107,7 @@ Dat ti je niz imena:
 
 let imena = ["Ana", "Marko", "Jelena"];
 Napiši kod koji spaja sva imena u jedan string razdvojena zarezom, npr: "Ana, Marko, Jelena". Zatim vraća taj string i sačuvaj ga u varijablu*/
-
+//napravi da ova funkcija moze da spaja niz bilo kojih imena u jednom stringu
 function spojiImena() {
   let imena = ["Marko", "Ana", "Jelena"];
 
@@ -123,12 +120,13 @@ console.log("Spojena imena su:", svaImena);
 console.log("--------------------------");
 /*8. Ispis dužine svakog stringa Dat ti je niz stringova: let reci = ["automobil", "kuća", "programiranje"]; Napiši kod koji ispisuje dužinu svakog stringa u nizu. Pogledaj .length*/
 
-function duzineReci() {
+function duzinaReci() {
   let reci = ["automobil", "kuća", "programiranje"];
 
   for (let i = 0; i < reci.length; i++) {
-    console.log("Rec:", reci[i], "| duzina:", reci[i].length);
+    console.log("Rec:", reci[i], "--- duzina:", reci[i].length);
   }
 }
 
-duzineReci();
+duzinaReci();
+console.log("--------------------------");
