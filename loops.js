@@ -107,14 +107,14 @@ Dat ti je niz imena:
 let imena = ["Ana", "Marko", "Jelena"];
 Napiši kod koji spaja sva imena u jedan string razdvojena zarezom, npr: "Ana, Marko, Jelena". Zatim vraća taj string i sačuvaj ga u varijablu*/
 //napravi da ova funkcija moze da spaja niz bilo kojih imena u jednom stringu
-function spojiImena() {
-  let imena = ["Marko", "Ana", "Jelena"];
 
-  let spojeno = imena.join("");
+let imena = ["Marko", "Ana", "Jelena"];
+function spojiImena(niz) {
+  let spojeno = niz.join(" , ");
 
   return spojeno;
 }
-let svaImena = spojiImena();
+let svaImena = spojiImena(imena);
 console.log("Spojena imena su:", svaImena);
 console.log("--------------------------");
 /*8. Ispis dužine svakog stringa Dat ti je niz stringova: let reci = ["automobil", "kuća", "programiranje"]; Napiši kod koji ispisuje dužinu svakog stringa u nizu. Pogledaj .length*/
