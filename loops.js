@@ -129,7 +129,11 @@ function duzinaReci() {
 
 duzinaReci();
 console.log("----------------------------------------------------------------");
-let brojNaKvadrat = (broj) => broj * broj;
 
-console.log(brojNaKvadrat(6)); // 36
-console.log(brojNaKvadrat(4)); // 16
+
+let podeliSaDva = (niz) => {
+  let result = [];
+  for (let i = 0; i < niz.length; i++);
+result.push(niz.[i] /2);
+}
+console.log(podeliSaDva([4, 8, 10])); 
