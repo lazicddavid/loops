@@ -128,4 +128,8 @@ function duzinaReci() {
 }
 
 duzinaReci();
-console.log("--------------------------");
+console.log("----------------------------------------------------------------");
+let brojNaKvadrat = (broj) => broj * broj;
+
+console.log(brojNaKvadrat(6)); // 36
+console.log(brojNaKvadrat(4)); // 16
