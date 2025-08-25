@@ -132,8 +132,7 @@ console.log("----------------------------------------------------------------");
 
 let uvecaniZaDeset = (niz) => {
   let ishodi = [];
-  for (let i = 0; i < niz.length; i++);
-  {
+  for (let i = 0; i < niz.length; i++) {
     ishodi.push(niz[i] + 10);
   }
   return ishodi;
