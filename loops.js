@@ -165,6 +165,7 @@ console.log("----------------------------------------------------------------");
 Dat ti je niz brojeva:
 let brojevi = [1, 2, 3, 4, 5];
 Napiši funkciju koja ispisuje kvadrat svakog broja iz niza.*/
+
 let kvadratiBrojeva = (niz) => {
   let rezultat = [];
   for (let i = 0; i < niz.length; i++) {
@@ -180,6 +181,7 @@ console.log("----------------------------------------------------------------");
 Dat ti je niz:
 let brojevi = [1, 2, 3, 4, 5];
 Napiši funkciju koja ispisuje duplirane vrednosti samo neparnih brojeva (npr. za 1 ispisuje 2, za 3 ispisuje 6 itd.)*/
+
 let duplirajNeparne = (niz) => {
   let rezultat = [];
   for (let i = 0; i < niz.length; i++) {
@@ -197,6 +199,7 @@ console.log("----------------------------------------------------------------");
 Dat ti je niz reči:
 let reci = ["pas", "mačka", "pas", "ptica", "pas"];
 Napiši funkciju koja vraća koliko puta se reč "pas" pojavljuje u nizu.*/
+
 let prebrojRec = (niz, rec) => {
   let brojac = 0;
   for (let i = 0; i < niz.length; i++) {
@@ -207,5 +210,28 @@ let prebrojRec = (niz, rec) => {
   return brojac;
 };
 
-let reci = ["pas", "mačka", "pas", "ptica", "pas"];
-console.log(prebrojRec(reci, "pas"));
+let nekeReci = ["pas", "mačka", "pas", "ptica", "pas"];
+console.log(prebrojRec(nekeReci, "pas"));
+console.log("----------------------------------------------------------------");
+/*
+8. **Ispis svake druge osobe iz niza objekata**
+Dat ti je niz:
+let ljudi = [ { ime: "Sara" }, { ime: "Milan" }, { ime: "Lena" }, { ime: "Stefan" }, { ime: "Jovan" } ];
+Napiši funkciju koja ispisuje ime svake druge osobe iz niza.*/
+let svakaDrugaOsoba = (niz) => {
+  let rezultat = [];
+  for (let i = 0; i < niz.length; i += 2) {
+    rezultat.push(niz[i].ime);
+  }
+  return rezultat;
+};
+
+let ljudi = [
+  { ime: "Sara" },
+  { ime: "Milan" },
+  { ime: "Lena" },
+  { ime: "Stefan" },
+  { ime: "Jovan" },
+];
+
+console.log(svakaDrugaOsoba(ljudi));
