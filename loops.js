@@ -190,5 +190,22 @@ let duplirajNeparne = (niz) => {
   return rezultat;
 };
 
-let brojevi = [1, 2, 3, 4, 5];
-console.log(duplirajNeparne(brojevi));
+let neparniBrojevi = [1, 2, 3, 4, 5];
+console.log(duplirajNeparne(neparniBrojevi));
+console.log("----------------------------------------------------------------");
+/*7. **Prebrojavanje koliko puta se određena reč pojavljuje u nizu**
+Dat ti je niz reči:
+let reci = ["pas", "mačka", "pas", "ptica", "pas"];
+Napiši funkciju koja vraća koliko puta se reč "pas" pojavljuje u nizu.*/
+let prebrojRec = (niz, rec) => {
+  let brojac = 0;
+  for (let i = 0; i < niz.length; i++) {
+    if (niz[i] === rec) {
+      brojac++;
+    }
+  }
+  return brojac;
+};
+
+let reci = ["pas", "mačka", "pas", "ptica", "pas"];
+console.log(prebrojRec(reci, "pas"));
