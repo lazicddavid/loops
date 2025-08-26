@@ -130,12 +130,8 @@ function duzinaReci() {
 duzinaReci();
 console.log("----------------------------------------------------------------");
 
-let uvecaniZaDeset = (niz) => {
-  let ishodi = [];
-  for (let i = 0; i < niz.length; i++) {
-    ishodi.push(niz[i] + 10);
-  }
-  return ishodi;
+/*1. **Ispis svakog drugog broja od 0 do 20**
+Napiši funkciju koja ispisuje svaki drugi broj počevši od 0 do 20 (npr. 0, 2, 4, ...).*/
+let svakiDrugiBroj = (niz) => {
+  let rezultat = [];
 };
-
-console.log(uvecaniZaDeset([50]));
