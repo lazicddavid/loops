@@ -235,3 +235,4 @@ let ljudi = [
 ];
 
 console.log(svakaDrugaOsoba(ljudi));
+console.log("----------------------------------------------------------------");
