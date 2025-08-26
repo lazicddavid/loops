@@ -134,4 +134,29 @@ console.log("----------------------------------------------------------------");
 Napiši funkciju koja ispisuje svaki drugi broj počevši od 0 do 20 (npr. 0, 2, 4, ...).*/
 let svakiDrugiBroj = (niz) => {
   let rezultat = [];
+  for (let i = 0; i < niz.length; i += 2) {
+    rezultat.push(niz[i]);
+  }
+  return rezultat;
 };
+
+console.log(
+  svakiDrugiBroj([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16])
+);
+console.log("----------------------------------------------------------------");
+/*2. **Prebrojavanje stringova dužih od 5 karaktera**
+Dat ti je niz stringova:
+let reci = ["auto", "programiranje", "kuća", "telefon", "sto"];
+Napiši funkciju koja vraća broj reči koje imaju više od 5 karaktera.*/
+let brojiDugeReci = (niz) => {
+  let brojac = 0;
+  for (let i = 0; i < niz.length; i++) {
+    if (niz[i].length > 5) {
+      brojac++;
+    }
+  }
+  return brojac;
+};
+
+let reci = ["auto", "programiranje", "kuca", "telefon", "sto"];
+console.log(brojiDugeReci(reci));
