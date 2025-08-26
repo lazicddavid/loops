@@ -160,3 +160,35 @@ let brojiDugeReci = (niz) => {
 
 let reci = ["auto", "programiranje", "kuca", "telefon", "sto"];
 console.log(brojiDugeReci(reci));
+console.log("----------------------------------------------------------------");
+/*3. **Ispis kvadrata brojeva iz niza**
+Dat ti je niz brojeva:
+let brojevi = [1, 2, 3, 4, 5];
+Napiši funkciju koja ispisuje kvadrat svakog broja iz niza.*/
+let kvadratiBrojeva = (niz) => {
+  let rezultat = [];
+  for (let i = 0; i < niz.length; i++) {
+    rezultat.push(niz[i] * niz[i]);
+  }
+  return rezultat;
+};
+
+let brojevi = [1, 2, 3, 4, 5];
+console.log(kvadratiBrojeva(brojevi));
+console.log("----------------------------------------------------------------");
+/*6. **Ispis dupliranih vrednosti samo neparnih brojeva**
+Dat ti je niz:
+let brojevi = [1, 2, 3, 4, 5];
+Napiši funkciju koja ispisuje duplirane vrednosti samo neparnih brojeva (npr. za 1 ispisuje 2, za 3 ispisuje 6 itd.)*/
+let duplirajNeparne = (niz) => {
+  let rezultat = [];
+  for (let i = 0; i < niz.length; i++) {
+    if (niz[i] % 2 !== 0) {
+      rezultat.push(niz[i] * 2);
+    }
+  }
+  return rezultat;
+};
+
+let brojevi = [1, 2, 3, 4, 5];
+console.log(duplirajNeparne(brojevi));
